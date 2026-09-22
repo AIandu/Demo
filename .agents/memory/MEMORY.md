@@ -1,0 +1,1 @@
+- [Video audio fallback](video-audio-fallback.md) — preserve timed narration copy and use a stable music fallback when audio generation is unavailable.
