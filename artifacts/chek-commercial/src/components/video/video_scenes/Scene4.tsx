@@ -52,9 +52,9 @@ export function Scene4() {
         <motion.img
           src={asset('chek-03-failed.jpg')}
           alt="CHEK failed gate result with critical finding"
-          className="h-full w-full object-cover object-top"
-          initial={{ scale: 1.16, y: '0%' }}
-          animate={{ scale: 1.03, y: '-4%' }}
+          className="h-full w-full object-contain object-center"
+          initial={{ scale: 1, y: '0%' }}
+          animate={{ scale: 1, y: '0%' }}
           transition={{ duration: 5.2, ease: [0.2, 0.72, 0.2, 1] }}
         />
         <motion.div

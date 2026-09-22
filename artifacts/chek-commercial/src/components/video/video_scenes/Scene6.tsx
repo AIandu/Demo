@@ -22,9 +22,9 @@ export function Scene6() {
         <motion.img
           src={asset('chek-04-passed.jpg')}
           alt="CHEK compliant result and signed vault"
-          className="h-full w-full object-cover object-top"
-          initial={{ scale: 1.12, y: 0 }}
-          animate={{ scale: 1.015, y: '-2%' }}
+          className="h-full w-full object-contain object-center"
+          initial={{ scale: 1, y: 0 }}
+          animate={{ scale: 1, y: 0 }}
           transition={{ duration: 4.8, ease: [0.2, 0.75, 0.2, 1] }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#0b0c0b]/55" />

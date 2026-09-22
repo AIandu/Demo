@@ -56,12 +56,12 @@ export function Scene5() {
       </div>
 
       <motion.div
-        className="screenshot-shell absolute bottom-[8vh] left-[7vw] h-[24vh] w-[27vw] overflow-hidden rounded-[0.5vw] opacity-65"
+        className="screenshot-shell absolute bottom-[6vh] left-[7vw] h-[36vh] w-[18vw] overflow-hidden rounded-[0.5vw] opacity-80"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 0.65, y: 0 }}
+        animate={{ opacity: 0.8, y: 0 }}
         transition={{ delay: 0.7, duration: 0.8 }}
       >
-        <img src={asset('chek-02-intake.jpg')} alt="CHEK auditor challenge interface" className="h-full w-full object-cover object-bottom" />
+        <img src={asset('chek-01-status.jpg')} alt="CHEK system status and vault integrity interface" className="h-full w-full object-contain object-center" />
         <div className="absolute inset-0 bg-[#0b0c0b]/35" />
       </motion.div>
       <motion.div

@@ -44,9 +44,9 @@ export function Scene3() {
         <motion.img
           src={asset('chek-02-intake.jpg')}
           alt="CHEK declared facts intake interface"
-          className="h-full w-full object-cover object-top"
-          initial={{ scale: 1.13, y: '0%' }}
-          animate={{ scale: 1.02, y: '-6%' }}
+          className="h-full w-full object-contain object-center"
+          initial={{ scale: 1, y: '0%' }}
+          animate={{ scale: 1, y: '0%' }}
           transition={{ duration: 5.3, ease: [0.2, 0.7, 0.2, 1] }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#0b0c0b]/30" />
