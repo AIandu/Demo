@@ -1,0 +1,28 @@
+kind = "video"
+previewPath = "/chek-commercial/"
+title = "CHEK Technology Commercial"
+description = "A 25–30 second premium cinematic technology commercial for CHEK, using the supplied authentic product screenshots to show independent AI governance verification from declared system facts through deterministic verifier review to a preserved signed result."
+version = "1.0.0"
+id = "artifacts/chek-commercial"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/chek-commercial/" ]
+localPort = 19717
+
+[services.development]
+run = "pnpm --filter @workspace/chek-commercial run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/chek-commercial", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/chek-commercial/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19717"
+BASE_PATH = "/chek-commercial/"
